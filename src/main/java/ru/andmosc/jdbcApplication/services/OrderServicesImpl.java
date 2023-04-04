@@ -7,7 +7,7 @@ import ru.andmosc.jdbcApplication.repositoties.OrderRepositoryImpl;
 @Service
 @AllArgsConstructor
 public class OrderServicesImpl implements OrderServices{
-    private OrderRepositoryImpl orderRepository;
+    private final OrderRepositoryImpl orderRepository;
 
     @Override
     public String getProductName(String name) {
