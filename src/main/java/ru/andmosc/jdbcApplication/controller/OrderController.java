@@ -11,7 +11,7 @@ import ru.andmosc.jdbcApplication.services.OrderServicesImpl;
 @RequestMapping("/products")
 @AllArgsConstructor
 public class OrderController {
-    private OrderServicesImpl orderServices;
+    private final OrderServicesImpl orderServices;
 
     @GetMapping("/fetch-product")
     public String getProductName(@RequestParam(value = "name") String name) {
