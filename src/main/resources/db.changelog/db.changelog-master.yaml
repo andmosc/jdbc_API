@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      file: V001/changelog.xml
+      relativeToChangelogFile: true
