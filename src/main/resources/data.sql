@@ -1,4 +1,4 @@
-INSERT INTO jdbc.customers (id,name, surname, age, phone_number)
+INSERT INTO jdbc.customer (id,name, surname, age, phone_number)
 VALUES (1,'Андрей', 'Иванов', '29', '+79020010001'),
        (2,'Максим', 'Петров', '35', '+79020010002'),
        (3,'Виталий', 'Сидоров', '47', '+79020010003'),

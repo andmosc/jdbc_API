@@ -1,6 +1,6 @@
 create schema IF NOT EXISTS jdbc;
 
-CREATE TABLE IF NOT EXISTS jdbc.customers
+CREATE TABLE IF NOT EXISTS jdbc.customer
 (
     id           serial primary key,
     name         varchar(30) not null,
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS jdbc.orders
     id           serial primary key,
     date         date         not null,
     customer_id  int
-        CONSTRAINT orders_customer_id_customer_id references jdbc.customers (id),
+        CONSTRAINT orders_customer_id_customer_id references jdbc.customer (id),
     product_name varchar(255) not null,
     amount       int check (amount > 0)
 );
