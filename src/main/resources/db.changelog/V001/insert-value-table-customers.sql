@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset andmosc:insert-value-table-customers
+--changeset AndMosc:insert-value-table-customers
 INSERT INTO jdbc.customer (name, surname, age, phone_number)
 VALUES ('Андрей', 'Иванов', '29', '+79020010001'),
        ('Максим', 'Петров', '35', '+79020010002'),

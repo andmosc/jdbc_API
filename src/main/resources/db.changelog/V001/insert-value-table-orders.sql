@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset andmosc:insert-value-table-orders
+--changeset AndMosc:insert-value-table-orders
 INSERT INTO jdbc.orders (date, customer_id, product_name, amount)
 VALUES ('2023-03-28', 1, 'Сок', 2),
        ('2023-03-12', 2, 'Молоко', 1),
